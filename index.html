@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>s.a.sh.a</title>
+</head>
+<body>
+
+<header id="header"></header>
+
+<!-- NAVBAR -->
+<nav class="navbar" role="navigation" id="navbar">
+    <div class="container clearfix">
+        <a href="#" class="button-toggle">
+            三
+        </a>
+        <ul class="navbar-menu">
+            <li><a href="#home" class="home active">Home</a></li>
+            <li><a href="#about" class="about">About me</a></li>
+            <li><a href="#skills" class="skills">My skills</a></li>
+            <li><a href="#contact" class="contact">Let's talk</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- BACK TO TOP BUTTON -->
+<div id="btn" class="btn" onclick="backToTop()">
+    <span>&#8593;</span>
+</div>
+
+<!-- HOME -->
+<section id="home" class="home-section">
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Oleksandra Ishchuk</h1>
+        <h2>Junior Software Engineer</h2>
+        <div class="btn-box">
+            <a href="https://www.linkedin.com/in/sasha-ishchuk/">
+                <div class="btn">
+                    <span>Discover me</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Video -->
+    <video controls autoplay loop muted>
+        <source src="videos/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<section id="about" class="my-section">
+
+    <div class="about-container site-container">
+        <article class="about-image-card">
+
+            <!-- Photo -->
+            <div class="img">
+                <img src="./images/about.jpg" class="about-me__profile" alt="about me photo">
+            </div>
+            <div class="about-bottom">
+                <h2>Oleksandra Ishchuk</h2>
+                <p>Junior Software Engineer at Sabre Poland.
+                    <br>Currently working on "FitApp" Java and SpringBoot project.</p>
+            </div>
+        </article>
+
+        <div class="about-text">
+            <div class="slide-box">
+                <div class="slide">
+                    <h2>About me</h2>
+                    <h3>My personal information</h3>
+                    <p align="justify"><span>L</span> orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin sem eget dui ullamcorper,
+                        at interdum quam pulvinar. Duis nec gravida mi. Etiam vitae interdum diam. Sed ut sapien id urna sagittis imperdiet
+                        quis sit amet mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris mollis luctus sem in varius.
+                        Duis tempus erat sed ultrices faucibus.</p>
+                    <p align="justify"><span>Q</span> uisque nisi lorem, placerat quis placerat eu, varius sed ligula. Sed eu tincidunt metus.
+                        Donec a augue eget leo pulvinar faucibus. Cras eget purus et tellus dignissim euismod et vitae diam. Morbi eu fermentum nisi.
+                        Praesent lacus orci, suscipit quis lorem quis, vulputate iaculis sem.</p>
+                </div>
+
+                <div class="slide">
+                    <h2>About me</h2>
+                    <h3>My employee information</h3>
+                    <p align="justify"><span>L</span> orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin sem eget dui ullamcorper,
+                        at interdum quam pulvinar. Duis nec gravida mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <p align="justify"><span>M</span> auris mollis luctus sem in varius.
+                        Duis tempus erat sed ultrices faucibus. Quisque nisi lorem, placerat quis placerat eu, varius sed ligula. Sed eu tincidunt metus.
+                        Donec a augue eget leo pulvinar faucibus.</p>
+                    <p align="justify"><span>C</span> ras eget purus et tellus dignissim euismod et vitae diam. Morbi eu fermentum nisi.
+                        Praesent lacus orci, suscipit quis lorem quis, vulputate iaculis sem.</p>
+                </div>
+                <a class="next" onclick="getNextSlide(1)">❯</a>
+                <a class="prev" onclick="getNextSlide(-1)">❮</a>
+                <div style="text-align:center">
+                    <span class="dot" onclick="getCurrentSlide(1)"></span>
+                    <span class="dot" onclick="getCurrentSlide(2)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="wrapper alt style2">
+    <section class="spotlight one">
+        <div class="image"><img src="images/programming_languages.jpg" alt="prgram" /></div>
+        <div class="content">
+            <h2>Programming languages</h2>
+            <ul class="skill-list">
+                <li><div class="press-logo">
+                        <img alt="Java" src="images/skills/java.png"/>
+                    </div></li>
+                <li><div class="press-logo">
+                        <img alt="Python" src="images/skills/python.png" />
+                    </div></li>
+                <li><div class="press-logo">
+                        <img alt="HTML" src="images/skills/html.png"/>
+                    </div></li>
+                <li><div class="press-logo">
+                        <img alt="CSS" src="images/skills/css.png"/>
+                    </div></li>
+            </ul>
+        </div>
+    </section>
+    <section class="spotlight two">
+        <div class="image"><img src="images/tech_skills.gif" alt="tech" /></div>
+        <div class="content">
+            <h2>Tech skills</h2>
+            <ul class="skill-list">
+                <li><div class="press-logo">
+                    <img alt="Spring" src="images/skills/spring.png"/>
+                </div></li>
+                <li><div class="press-logo">
+                    <img alt="Maven" src="images/skills/maven.png" />
+                </div></li>
+                <li><div class="press-logo">
+                    <img alt="SQL" src="images/skills/sql.png"/>
+                </div></li>
+                <li><div class="press-logo">
+                    <img alt="Git" src="images/skills/git.png"/>
+                </div></li>
+            </ul>
+        </div>
+    </section>
+    <section class="spotlight three" style="padding-bottom: 20px">
+        <div class="image"><img src="images/soft_skills.jpg" alt="" /></div>
+        <div class="content">
+            <h2>Soft skills</h2>
+            <ul class="skill-list">
+                <li><div class="press-logo">
+                    <img width="200" height="200" alt="Scrum" src="images/skills/scrum.png"/>
+                </div></li>
+                <li><div class="press-logo">
+                    <img alt="Problem solving" src="images/skills/solve.png" />
+                </div></li>
+                <li><div class="press-logo">
+                    <img alt="Teamwork" src="images/skills/teamwork.png"/>
+                </div></li>
+                <li><div class="press-logo">
+                    <img alt="Time management" src="images/skills/time.png" />
+                </div></li>
+            </ul>
+        </div>
+    </section>
+</section>
+
+<section id="contact" class="wrapper my-section" style="padding-bottom: 10px">
+        <div class="inner">
+            <h2>Contact me</h2>
+            <p>Phasellus convallis elit id ullamcorper pulvinar.
+                Duis aliquam turpis mauris, eu ultricies erat malesuada quis.
+                Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem,
+                sit amet imperdiet est velit quis lorem.</p>
+            <div class="split style1">
+                <section>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <label for="name"><h3>Your name</h3></label>
+                                <input type="text" name="name" id="name" />
+                            </div>
+                            <div class="field half">
+                                <label for="email"><h3>E-mail</h3></label>
+                                <input type="text" name="email" id="email" />
+                            </div>
+                            <div class="field">
+                                <label for="message"><h3>Message content</h3></label>
+                                <textarea name="message" id="message" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <a href="">
+                                <div class="btn">
+                                    <span>Send Message</span>
+                                </div>
+                            </a>
+                        </div>
+                    </form>
+                </section>
+                <section>
+                    <ul class="contact">
+                        <li>
+                            <h4>E-mail</h4>
+                            <a href="mailto:alexa.ishchuk@gmail.com"><h5>alexa.ishchuk@gmal.com</h5></a>
+                        </li>
+                        <li>
+                            <h4>Phone</h4>
+                            <a href="tel:+48576068902"><h5>+48 576 068 902</h5></a>
+                        </li>
+                        <li>
+                            <ul class="icons">
+                                <li><a href="https://github.com/sasha-ishchuk"
+                                       class="fa fa-github-square" style="font-size:80px; color:black"></a></li>
+                                <li><a href="https://www.linkedin.com/in/sasha-ishchuk/"
+                                       class="fa fa-linkedin-square" style="font-size:80px; color:black"></a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=100013127041705"
+                                       class="fa fa-facebook-square" style="font-size:80px; color:black"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    <footer>
+        <div class="my-footer">
+            <p>&copy;2022 <a href="#">s.a.sh.a</a></p>
+        </div>
+    </footer>
+</section>
+
+<!--<footer>-->
+<!--    <div class="my-footer">-->
+<!--    <p>&copy;2022 <a href="#">s.a.sh.a</a></p>-->
+<!--    </div>-->
+<!--</footer>-->
+<script src="/js/sticky_navbar.js"></script>
+<script src="/js/active_navbar_top_button.js"></script>
+<script src="/js/slide_about.js"></script>
+<script src="/js/back_top.js"></script>
+</body>
+</html>

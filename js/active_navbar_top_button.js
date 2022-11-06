@@ -8,7 +8,7 @@ window.onscroll = () => {
 
     htmlSection.forEach((section) => {
         const offsetTop = section.offsetTop;
-        if (pageYOffset >= offsetTop - 60) {
+        if (pageYOffset >= offsetTop) {
             if(section.hasAttribute("id")){
                 currentElement = section.getAttribute("id");
             }

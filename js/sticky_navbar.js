@@ -1,7 +1,8 @@
 let navbar = document.getElementById("navbar");
 let navPos = navbar.getBoundingClientRect().top;
+let header = document.getElementById("head")
 
-window.addEventListener("scroll", e => {
+window.addEventListener("scroll", () => {
     let scrollPos = window.scrollY;
     if (scrollPos > navPos) {
         navbar.classList.add('sticky');
